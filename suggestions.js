@@ -1,10 +1,14 @@
 function showSuggestion(str){
+    
+
+
+
     if(str.length == 0){
         $("#output-field").html("");
     } else {
         $.ajax({
             type: "POST",
-            url: "./suggestions.php",
+            url: "./dict_suggest.php",
             data: {
                 string: str
             },
